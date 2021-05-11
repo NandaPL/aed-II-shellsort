@@ -112,7 +112,7 @@ int main (){
     }
     ordenaCrescente(array1, 100000);
     ordenaDecrescente(array2, 100000);
-    ordenaCrescenteDecrescente(array3, 100000); //-> dando probleminha
+    ordenaCrescenteDecrescente(array3, 100000); 
     ordenaDecrescenteCrescente(array4, 100000);
     
     return 0;
