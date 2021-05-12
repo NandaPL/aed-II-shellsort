@@ -101,7 +101,7 @@ void ordenaDecrescenteCrescente(int a[], int n){
 }
 
 int main (){
-    int max = 100;
+    int max = 100000;
     int min = 1;
     for(int i = 0; i < 100000; i++){
         int aleatorio = rand()%(max-min+1) + min;
