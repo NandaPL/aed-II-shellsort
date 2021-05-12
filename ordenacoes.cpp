@@ -110,10 +110,30 @@ int main (){
         array3[i] = aleatorio;
         array4[i] = aleatorio;
     }
+    auto inicio = std::chrono::high_resolution_clock::now();
     ordenaCrescente(array1, 100000);
+    auto resultado = std::chrono::high_resolution_clock::now() - inicio;
+    long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(resultado).count();
+    cout << "array 1 Ordena Crescente: " << microseconds << " microssegundos\n";
+    
+    inicio = std::chrono::high_resolution_clock::now();
     ordenaDecrescente(array2, 100000);
+    resultado = std::chrono::high_resolution_clock::now() - inicio;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(resultado).count();
+    cout << "array 2 Ordena Decrescente: " << microseconds << " microssegundos\n";
+
+    inicio = std::chrono::high_resolution_clock::now();
     ordenaCrescenteDecrescente(array3, 100000); 
-    ordenaDecrescenteCrescente(array4, 100000);
+    resultado = std::chrono::high_resolution_clock::now() - inicio;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(resultado).count();
+    cout << "array 3 Ordena Crescente e Decrescente: " << microseconds << " microssegundos\n";
+
+    inicio = std::chrono::high_resolution_clock::now();
+    ordenaDecrescenteCrescente(array4, 100000);    
+    resultado = std::chrono::high_resolution_clock::now() - inicio;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(resultado).count();
+    cout << "array 4 Ordena Decrescente e Crescente: " << microseconds << " microssegundos\n";
+
     
     return 0;
 }
