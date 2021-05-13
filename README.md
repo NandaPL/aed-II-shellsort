@@ -1,2 +1,2 @@
-# Shell-Sort
-Este repositório foi criado para uma pesquisa da disciplina de Algoritmo e Estrutura de Dados II.
+# Sobre
+Este repositório foi criado para uma pesquisa sobre o algoritmo Shell Sort da disciplina de Algoritmo e Estrutura de Dados II.
